@@ -22,7 +22,12 @@
         width: 100%;
         max-width: 500px;
     }
-
+.container{
+    background-color: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px);              
+    padding: 40px;
+    border-radius: 15px;
+}
     .form-control{
     background-color: rgba(250, 247, 247, 0.559); 
     color: white; 
@@ -32,20 +37,20 @@
 
     </style>
     <body>
-    <div>
+    <div class="container">
         <div class="row">
-    <div class="col">
-    <label for="pass" class="form-label">User</label>
+    <div class="mb-3">
+<label for="pass" class="form-label">User</label>
     <br>
-    <input  class="form-control" type="text" name="pass" id="pass" placeholder="..." required>
+<input  class="form-control" type="text" name="pass" id="pass" placeholder="..." required>
     </div>
     <br>
-    <div class="col">
+    <div class="mb-3">
     <label for="pass" class="form-label">Password</label>
     <br>
-    <input class="form-control" type="text" name="pass" id="pass" placeholder="..."required>
+<input class="form-control" type="text" name="pass" id="pass" placeholder="..."required>
     </div>
-    </div>
+</div>
 
     </body>
     </html>
