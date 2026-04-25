@@ -79,7 +79,7 @@
 </label>
    </div>
                <div>
-                <button type="button" onclick="Pass()" class="btn btn-primary">Login</button>
+                <button type="button" onclick="Pass()" class="btn btn-primary" href="notebook.html">Login</button>
                 <button type="reset" class="btn btn-secondary">Cancel</button>
             </div>
 </div>
@@ -91,6 +91,7 @@
 
             if (username === 'AteneoStudent#1' && password === '#09681') {
                 alert('Login successful!');
+                window.location.href = "notebook.html";
             } else {
                 alert('Wrong! Please try again.');
             }
