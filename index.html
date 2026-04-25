@@ -49,9 +49,10 @@
 .text{
     margin: 4px 0 0 50px; 
     margin-left: auto;
-  font-size: 0.9rem;
-  color: #666;
+     color: #666;
   font-style: italic;
+  font-size: 0.9rem;
+
 }
     </style>
     <body>
@@ -60,13 +61,13 @@
         <h1 class="login-button"><bold>Login</bold></h1>
         <div class="row">
     <div class="mb-3">
-<label for="pass" class="form-label">User</label>
+<label for="username" class="form-label">User</label>
     <br>
 <input  class="form-control" type="text" name="pass" id="pass" placeholder="..." required>
     </div>
     <br>
     <div class="mb-3">
-    <label for="pass" class="form-label">Password</label>
+    <label for="password" class="form-label">Password</label>
     <br>
 <input class="form-control" type="text" name="pass" id="pass" placeholder="..."required>
     </div>
@@ -77,10 +78,23 @@
 <p class="text">Your session will be saved on this device</p>
 </label>
    </div>
-
-
-    
+               <div>
+                <button type="button" onclick="Pass()" class="btn btn-primary">Login</button>
+                <button type="reset" class="btn btn-secondary">Cancel</button>
+            </div>
 </div>
 
+    <script>
+        function Pass() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username === 'AteneoStudent#1' && password === '#09681') {
+                alert('Login successful!');
+            } else {
+                alert('Wrong! Please try again.');
+            }
+        }
+    </script>
     </body>
     </html>
