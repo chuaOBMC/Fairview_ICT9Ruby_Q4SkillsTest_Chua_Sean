@@ -9,9 +9,11 @@
 </head>
 <style>
          /* Use of AI:
+         - Gemini
   1. Why is the navbar not in the middle omd
   2. Why is the box not transparent
   3. Why is the logo like not aligned ??
+  4. Why are the images for the notebooks not showing
   */
     body{
         background-color: rgba(132, 156, 216, 0.6);
@@ -37,6 +39,21 @@
     text-align: left;
     margin-left: 50px;
 }
+.English, .Filipino, .Math, .ICT, .PE {
+    height: 400px; /* Give it height so the image shows */
+    width: 250px;  /* Give it a set width */
+    margin: 10px auto;
+    border-radius: 15px;
+    padding: 20px;
+    color: white; /* Make text readable over images */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* This makes the image fill the whole box */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Puts text at the bottom of the card */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Makes text pop *
+} 
     .English{
 background-image: url('https://static.vecteezy.com/system/resources/thumbnails/054/559/067/large/animation-of-playful-arrangement-of-colorful-circles-floating-against-a-vibrant-red-background-creating-a-lively-and-cheerful-atmosphere-free-video.jpg');
 background-size: 300px;
@@ -95,41 +112,44 @@ background-size: 300px;
 <h1>SUBJECT NOTEBOOKS</h1>
 <h5>Click to enter</h5>
 <br>
-<div class="Notebook">
 <div class="container">
     <div class="row">
-        
+        <div class="col">
+            <div class="English">
+                <h3>English</h3>
+                <p>9-Leo</p>
+                <p>Robert Prevost</p>
+            </div>
+        </div>
 
         <div class="col">
-            <div>
-            <h3>English</h3>
-          <p>9-Leo</p>
-          <p>Robert Prevost</p>
+            <div class="Filipino">
+                <h3>Filipino</h3>
+                <p>9-Leo</p>
+                <p>Francisca Bartolome</p>
+            </div>
         </div>
-       
-         <div class="col">
-            <h3>Filipino</h3>
-           <p>9-Leo</p>
-           <p>Francisca Bartolome</p>
+
+        <div class="col">
+            <div class="Math">
+                <h3>Math</h3>
+                <p>9-Leo</p>
+                <p>Tarsius Miguel</p>
+            </div>
+                    <div class="col">
+            <div class"ICT">
+                <h3>ICT</h3>
+                <p>9-Leo</p>
+                <p>John Renn</p>
+            </div>
+                    <div class="col">
+            <div class="PE">
+                <h3>PE</h3>
+                <p>9-Leo</p>
+                <p>Kases Sy</p>
+            </div>
         </div>
-       
-         <div class="col">
-            <h3>Math</h3>
-            <p>9-Leo</p>
-            <p>Tarsius Miguel</p>
         </div>
-                 <div class="col">
-            <h3>ICT</h3>
-            <p>9-Leo</p>
-            <p>John Paul II</p>
-        </div>
-                 <div class="col">
-            <h3>PE</h3>
-            <p>9-Leo</p>
-            <p>Kases Sy</p>
-        </div>
-    </div>
 </div>
-      </div>
 </body>
 </html>
